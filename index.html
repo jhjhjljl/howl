@@ -3,196 +3,88 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./index.css">
-	<title>Howl - Classless CSS File</title>
+	<link rel="stylesheet" href="./howl.css">
+	<title>Howl.css — A loyal companion for your HTML</title>
 </head>
 <body>
-	<nav></nav>
-	<header></header>
-	<aside></aside>
 	<search></search>
+	<nav></nav>
+	<aside></aside>
+	<header>
+		<h1>Howl.css — A loyal companion for your HTML</h1>
+		<p>Howl is a loyal, classless CSS framework that follows your HTML wherever it goes. Named after my Shih Tzu, it's designed to bark at the complexity of modern web dev—giving you a beautiful, semantic site using nothing but the tags you already know.</p>
+		<p>Howl leaves no tag behind. While other frameworks only style the basics, Howl provides 100% coverage for every element in the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">MDN reference</a>. If it's valid HTML, it's already styled and ready to go.</p>
+	</header>
 	<main>
 		<section>
-			<h1>Content sectioning</h1>
+			<h2>Content sectioning</h2>
 			<p>Content sectioning elements allow you to organize the document content into logical pieces. Use the sectioning elements to create a broad outline for your page content, including header and footer navigation, and heading elements to identify sections of content.</p>
-			<section>
-				<h2>&lt;address&gt;</h2>
+			<article>
+				<h3>address</h3>
+				<p>Indicates that the enclosed HTML provides contact information for a person or people, or for an organization.</p>
+			</article>
+			<article>
+				<h3>article</h3>
 				<p>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include a forum post, a magazine or newspaper article, a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
-				<address>
-					<a href="mailto:jim@example.com">jim@example.com</a><br>
-					<a href="tel:+14155550132">+1 (415) 555‑0132</a><br>
-					Visit us at 1053 Cool St. Colorado<br>
-					https://www.google.ca
-				</address>
-			</section>
-			<section>
-				<h1>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;</h1>
+			</article>
+			<article>
+				<h3>aside</h3>
+				<p>Represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
+			</article>
+			<article>
+				<h3>footer</h3>
+				<p>Represents a footer for its nearest ancestor sectioning content or sectioning root element. A &lt;footer&gt; typically contains information about the author of the section, copyright data, or links to related documents.</p>
+			</article>
+			<article>
+				<h3>header</h3>
+				<p>Represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.</p>
+			</article>
+			<article>
+				<h3>h1, h2, h3, h4, h5, h6</h3>
 				<p>Represent six levels of section headings. &lt;h1&gt; is the highest section level and &lt;h6&gt; is the lowest.</p>
-				<h1>Heading One Beetles</h1>
-				<h2>Heading Two External morphology</h2>
-				<h3>Heading Three Head</h3>
-				<h4>Heading Four Mouthparts</h4>
-				<h5>Heading Five Thorax</h3>
-				<h6>Heading Six Prothorax</h4>
-			</section>
-			<section>
-				<h2>&lt;hgroup&gt;</h2>
+			</article>
+			<article>
+				<h3>hgroup</h3>
 				<p>Represents a heading grouped with any secondary content, such as subheadings, an alternative title, or a tagline.</p>
-				<hgroup>
-					<h1>Frankenstein</h1>
-					<p>Or: The Modern Prometheus</p>
-				</hgroup>
-				<p>Victor Frankenstein, a Swiss scientist, has a great ambition: to create intelligent life. But when his creature first stirs, he realizes he has made a monster. A monster which, abandoned by his master and shunned by everyone who sees it, follows Dr Frankenstein to the very ends of the earth.</p>
-			</section>
+			</article>
+			<article>
+				<h3>main</h3>
+				<p>Represents the dominant content of the body of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.</p>
+			</article>
+			<article>
+				<h3>nav</h3>
+				<p>Represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.</p>
+			</article>
+			<article>
+				<h3>section</h3>
+				<p>Represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.</p>
+			</article>
+			<article>
+				<h3>search</h3>
+				<p>Represents a part that contains a set of form controls or other content related to performing a search or filtering operation.</p>
+			</article>
 		</section>
-
 		<section>
-			<h1>Text content</h1>
+			<h2>Text content</h2>
 			<p>Use HTML text content elements to organize blocks or sections of content placed between the opening &lt;body&gt; and closing &lt;/body&gt; tags. Important for accessibility and SEO, these elements identify the purpose or structure of that content.</p>
-			<section>
-				<h2>&lt;blockquote&gt;</h2>
+			<article>
+				<h3>blockquote</h3>
 				<p>Indicates that the enclosed text is an extended quotation. Usually, this is rendered visually by indentation. A URL for the source of the quotation may be given using the cite attribute, while a text representation of the source can be given using the &lt;cite&gt; element.</p>
-				<blockquote>
-					<p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.</p>
-					<p><cite>Aldous Huxley, Brave New World</cite></p>
-				</blockquote>
-			</section>
-			<section>
-				<h2>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</h2>
+			</article>
+			<article>
+				<h3>dd</h3>
+				<p>Provides the description, definition, or value for the preceding term (&lt;dt&gt;) in a description list (&lt;dl&gt;).</p>
+			</article>
+			<article>
+				<h3>div</h3>
+				<p>The generic container for flow content. It has no effect on the content or layout until styled in some way using CSS (e.g., styling is directly applied to it, or some kind of layout model like flexbox is applied to its parent element).</p>
+			</article>
+			<article>
+				<h3>dl</h3>
 				<p>Represents a description list. The element encloses a list of groups of terms (specified using the &lt;dt&gt; element) and descriptions (provided by &lt;dd&gt; elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).</p>
-				<dl>
-					<dt>Beast of Bodmin</dt>
-					<dd>A large feline inhabiting Bodmin Moor.</dd>
-					<dt>Morgawr</dt>
-					<dd>A sea serpent.</dd>
-					<dt>Owlman</dt>
-					<dd>A giant owl-like creature.</dd>
-				</dl>
-			</section>
-			<section>
-				<h2>&lt;figure&gt;, &lt;figcaption&gt;</h2>
-				<p>Represents self-contained content, potentially with an optional caption, which is specified using the &lt;figcaption&gt; element. The figure, its caption, and its contents are referenced as a single unit.</p>
-				<figure>
-					<img src="https://placehold.co/400x100" alt="Elephant at sunset"/>
-					<figcaption>An elephant at sunset</figcaption>
-				</figure>
-			</section>
-			<section>
-				<h2>&lt;hr&gt;</h2>
-				<p>Represents a thematic break between paragraph-level elements: for example, a change of scene in a story, or a shift of topic within a section.</p>
-				<p>§1: The first rule of Fight Club is: You do not talk about Fight Club.</p>
-				<hr>
-				<p>§2: The second rule of Fight Club is: Always bring cupcakes.</p>
-			</section>
-			<section>
-				<h2>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;, &lt;menu&gt;</h2>
-				<p>Represents an item in a list. It must be contained in a parent element: an ordered list (&lt;ol&gt;), an unordered list (&lt;ul&gt;), or a menu (&lt;menu&gt;). In menus and unordered lists, list items are usually displayed using bullet points. In ordered lists, they are usually displayed with an ascending counter on the left, such as a number or letter.</p>
-				<ul>
-					<li>Neil Armstrong</li>
-					<li>Alan Bean</li>
-					<li>Peter Conrad</li>
-					<li>Edgar Mitchell</li>
-					<li>Alan Shepard</li>
-				</ul>
-				<ol>
-					<li>Mix flour, baking powder, sugar, and salt.</li>
-					<li>In another bowl, mix eggs, milk, and oil.</li>
-					<li>Stir both mixtures together.</li>
-					<li>Fill muffin tray 3/4 full.</li>
-					<li>Bake for 20 minutes.</li>
-				</ol>
-				<menu>
-					<li>Save for later</li>
-					<li>Share this news</li>
-				</menu>
-			</section>
-			<section>
-				<h2>&lt;pre&gt;, &lt;code&gt;</h2>
-				<p>Represents preformatted text which is to be presented exactly as written in the HTML file. The text is typically rendered using a non-proportional, or monospaced, font. Whitespace inside this element is displayed as written.</p>
-				<pre><code>let i = 5;
-
-if (i &lt; 10 &amp;&amp; i &gt; 0)
-    return &quot;Single Digit Number&quot;</code></pre>
-				<pre>:is(ul, ol, menu) li::marker {
-    color: var(--color-purple);
-    font-weight: 700;
-}
-
-pre {
-    margin-block: 2rem;
-    background-color: var(--bg-offset);
-    padding: 1rem;
-    border-radius: 5px;
-}</pre>
-			</section>
+			</article>
 		</section>
-		<section>
-			<h1>Inline text semantics</h1>
-			<p>Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.</p>
-			<section>
-				<h2>&lt;a&gt;</h2>
-				<p>Together with its href attribute, creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address.</p>
-				<p>You can reach Michael at:</p>
-				<ul>
-					<li>
-						<a href="https://example.com">Website</a>
-					</li>
-					<li>
-						<a href="mailto:m.bluth@example.com">Email</a>
-					</li>
-					<li>
-						<a href="tel:+123456789">Phone</a>
-					</li>
-				</ul>
-				<p>Learn more about our products <a href="#">here</a>. You can reach Michael.</p>
-			</section>
-			<section>
-				<h2>&lt;abbr&gt;</h2>
-				<p>Represents an abbreviation or acronym.</p>
-				<p>You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup Language). Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content layer separate. This is called "separation of concerns."</p>
-			</section>
-			<section>
-				<h2>&lt;b&gt;</h2>
-				<p>Used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use &lt;b&gt; for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the &lt;strong&gt; element.</p>
-				<p>The two most popular science courses offered by the school are <b>chemistry</b> (the study of chemicals and the composition of substances) and <b>physics</b> (the study of the nature and properties of matter and energy).</p>
-			</section>
-			<section>
-				<h2>&lt;code&gt;, &lt;samp&gt;</h2>
-				<p>Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.</p>
-				<p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
-				<p>I was trying to boot my computer, but I got this hilarious message:</p>
-				<p><samp>Keyboard not found. Press F1 to continue</samp></p>
-			</section>
-			<section>
-				<h2>&lt;kbd&gt;</h2>
-				<p>Represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a &lt;kbd&gt; element using its default monospace font, although this is not mandated by the HTML standard.</p>
-				<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
-			</section>
-			<section>
-				<h2>&lt;mark&gt;</h2>
-				<p>Represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.</p>
-				<p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
-			</section>
-			<section>
-				<h2>&lt;q&gt;</h2>
-				<p></p>
-				<p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">I am sorry, Dave. I am afraid I can't do that.</q></p>
-			</section>
-			<section>
-				<h2>&lt;s&gt;</h2>
-				<p>Renders text with a strikethrough, or a line through it. Use the &lt;s&gt; element to represent things that are no longer relevant or no longer accurate. However, &lt;s&gt; is not appropriate when indicating document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements, as appropriate.</p>
-				<p><s>There will be a few tickets available at the box office tonight.</s></p>
-			</section>
-			<section>
-				<h2>&lt;u&gt;</h2>
-				<p>Represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a single solid underline but may be altered using CSS.</p>
-				<p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
-			</section>
-		</section>
-
 	</main>
-	<footer>
-		<p>Howl - Classless CSS File By Justin</p>
-	</footer>
+	<footer></footer>
 </body>
 </html>
