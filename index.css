@@ -1,15 +1,16 @@
 :root {
-  --color-navy: #362F4F;
-  --color-purple: #5B23FF;
-  --color-sky: #008BFF;
-  --color-yellow: #E4FF30;
-  --text-heading: #1A1626;
-  --text-body: #322D41;
-  --text-muted: #6B6681;
-  --text-disabled: #A9A7B5;
-  --hr-line: #E2E1E9;
-  --bg-offset: #F8F7FA;
-  --shadow-color: rgba(26, 22, 38, 0.1);
+	--color-navy: #362F4F;
+	--color-purple: #5B23FF;
+	--color-sky: #008BFF;
+	--color-yellow: #E4FF30;
+	--color-red: #FF3B5C;
+	--text-heading: #1A1626;
+	--text-body: #322D41;
+	--text-muted: #6B6681;
+	--text-disabled: #A9A7B5;
+	--hr-line: #E2E1E9;
+	--bg-offset: #F8F7FA;
+	--shadow-color: rgba(26, 22, 38, 0.1);
 }
 
 @font-face {
@@ -165,7 +166,7 @@ figcaption {
 }
 
 hr {
-	border: 1px solid var(--hr-line);
+	border: 0.5px solid var(--hr-line);
 	margin-block: 2.5rem;
 	position: relative;
 	overflow: visible;
@@ -178,8 +179,8 @@ hr::before{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 70px;
-	height: 5px;
-	background-color: var(--text-muted);
+	height: 3px;
+	background-color: var(--text-disabled);
 	border-radius: 2px;
 }
 
@@ -198,4 +199,125 @@ pre {
 	background-color: var(--bg-offset);
 	padding: 1rem;
 	border-radius: 5px;
+}
+
+pre code {
+	background-color: initial;
+	padding: 0;
+	color: var(--text-body);
+	border-radius: 0;
+}
+
+a {
+	color: var(--color-purple);
+}
+
+abbr {
+	color: var(--color-purple);
+	text-decoration: underline dotted;
+	font-weight: 700;
+}
+
+b, strong, time {
+	color: var(--text-heading);
+	font-weight: 800;
+}
+
+bdi {
+
+}
+
+bdo {
+
+}
+
+br {
+
+}
+
+code, samp {
+	background-color: var(--bg-offset);
+	padding: 0.2em 0.4em;
+	color: var(--color-purple);
+	border-radius: 5px;
+}
+
+data {
+
+}
+
+dfn {
+
+}
+
+em {
+
+}
+
+i {
+
+}
+
+kbd {
+	background-color: var(--bg-offset);
+	padding: 0.2em 0.4em;
+	border-radius: 5px;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #fff inset;
+}
+
+mark {
+	background-color: var(--color-yellow);
+	padding-inline: 0.3em;
+}
+
+q {
+	font-style: italic;
+}
+
+rp {
+
+}
+
+rt {
+
+}
+
+ruby {
+
+}
+
+s {
+	text-decoration-color: var(--color-red);
+}
+
+small {
+
+}
+
+span {
+
+}
+
+sub {
+
+}
+
+sup {
+
+}
+
+u {
+	text-decoration-style: wavy;
+	text-decoration-line: underline;
+	text-decoration-color: var(--color-red);
+	text-underline-offset: 4px;
+	text-decoration-thickness: 1px;
+}
+
+var {
+
+}
+
+wbr {
+
 }

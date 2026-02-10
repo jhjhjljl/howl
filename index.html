@@ -126,6 +126,70 @@ pre {
 }</pre>
 			</section>
 		</section>
+		<section>
+			<h1>Inline text semantics</h1>
+			<p>Use the HTML inline text semantic to define the meaning, structure, or style of a word, line, or any arbitrary piece of text.</p>
+			<section>
+				<h2>&lt;a&gt;</h2>
+				<p>Together with its href attribute, creates a hyperlink to web pages, files, email addresses, locations within the current page, or anything else a URL can address.</p>
+				<p>You can reach Michael at:</p>
+				<ul>
+					<li>
+						<a href="https://example.com">Website</a>
+					</li>
+					<li>
+						<a href="mailto:m.bluth@example.com">Email</a>
+					</li>
+					<li>
+						<a href="tel:+123456789">Phone</a>
+					</li>
+				</ul>
+				<p>Learn more about our products <a href="#">here</a>. You can reach Michael.</p>
+			</section>
+			<section>
+				<h2>&lt;abbr&gt;</h2>
+				<p>Represents an abbreviation or acronym.</p>
+				<p>You can use <abbr>CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup Language). Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content layer separate. This is called "separation of concerns."</p>
+			</section>
+			<section>
+				<h2>&lt;b&gt;</h2>
+				<p>Used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use &lt;b&gt; for styling text or granting importance. If you wish to create boldface text, you should use the CSS font-weight property. If you wish to indicate an element is of special importance, you should use the &lt;strong&gt; element.</p>
+				<p>The two most popular science courses offered by the school are <b>chemistry</b> (the study of chemicals and the composition of substances) and <b>physics</b> (the study of the nature and properties of matter and energy).</p>
+			</section>
+			<section>
+				<h2>&lt;code&gt;, &lt;samp&gt;</h2>
+				<p>Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.</p>
+				<p>The <code>push()</code> method adds one or more elements to the end of an array and returns the new length of the array.</p>
+				<p>I was trying to boot my computer, but I got this hilarious message:</p>
+				<p><samp>Keyboard not found. Press F1 to continue</samp></p>
+			</section>
+			<section>
+				<h2>&lt;kbd&gt;</h2>
+				<p>Represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a &lt;kbd&gt; element using its default monospace font, although this is not mandated by the HTML standard.</p>
+				<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+			</section>
+			<section>
+				<h2>&lt;mark&gt;</h2>
+				<p>Represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.</p>
+				<p>Several species of <mark>salamander</mark> inhabit the temperate rainforest of the Pacific Northwest.</p>
+			</section>
+			<section>
+				<h2>&lt;q&gt;</h2>
+				<p></p>
+				<p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921&ref_=ext_shr_lnk">I am sorry, Dave. I am afraid I can't do that.</q></p>
+			</section>
+			<section>
+				<h2>&lt;s&gt;</h2>
+				<p>Renders text with a strikethrough, or a line through it. Use the &lt;s&gt; element to represent things that are no longer relevant or no longer accurate. However, &lt;s&gt; is not appropriate when indicating document edits; for that, use the &lt;del&gt; and &lt;ins&gt; elements, as appropriate.</p>
+				<p><s>There will be a few tickets available at the box office tonight.</s></p>
+			</section>
+			<section>
+				<h2>&lt;u&gt;</h2>
+				<p>Represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a single solid underline but may be altered using CSS.</p>
+				<p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
+			</section>
+		</section>
+
 	</main>
 	<footer>
 		<p>Howl - Classless CSS File By Justin</p>
