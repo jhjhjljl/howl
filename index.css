@@ -34,7 +34,6 @@ body {
 	padding: 0 1rem;
 	letter-spacing: 0.01rem;
 	color: var(--text-body);
-	font-size: 1.125rem;
 }
 
 address {
@@ -123,4 +122,73 @@ section {
 
 search {
 
+}
+
+blockquote {
+	margin: 3rem 2.5rem;
+	color: var(--text-muted);
+	border-left: 3px solid var(--hr-line);
+	padding-left: 1.5rem;
+	font-style: italic;
+}
+
+cite {
+	font-size: 0.9rem;
+}
+
+cite::before {
+	content: "— ";
+}
+
+dl {
+	margin-block: 2rem;
+}
+
+dt {
+	font-weight: 800;
+	color: var(--text-heading);
+}
+
+dd {
+	margin-left: 1.5rem;
+}
+
+figure {
+	margin: 0;
+}
+
+figcaption {
+	color: var(--text-muted);
+	text-align: center;
+	font-style: italic;
+	font-size: 0.9rem;
+}
+
+hr {
+	border: 1px solid var(--hr-line);
+	margin-block: 2.5rem;
+	position: relative;
+	overflow: visible;
+}
+
+hr::before{
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70px;
+	height: 5px;
+	background-color: var(--text-muted);
+	border-radius: 2px;
+}
+
+ol, ul, menu {
+	margin-block: 1rem;
+	padding-left: 4rem;
+}
+
+:is(ul, ol, menu) li::marker {
+	color: var(--color-purple);
+	font-weight: 700;
 }
