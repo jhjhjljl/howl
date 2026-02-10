@@ -1,6 +1,10 @@
 :root {
 	--color-black-1: #222;
 	--color-black-2: #333;
+	--color-navy: #362F4F;
+	--color-purple: #5B23FF;
+	--color-sky: #008BFF;
+	--color-yellow: #E4FF30;
 }
 
 @font-face {
@@ -25,6 +29,28 @@ body {
 	padding: 0 1rem;
 	letter-spacing: 0.01rem;
 	color: var(--color-black-2);
+}
+
+address {
+	font-style: normal;
+}
+
+address a[href^="mailto"]::before {
+	content: "️✉️ ";
+}
+
+address a[href^="tel"]::before {
+	content: "📞 ";
+}
+
+aside {
+
+}
+
+footer {
+	color: var(--color-yellow);
+	background-color: var(--color-navy);
+	text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
