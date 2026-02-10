@@ -192,3 +192,10 @@ ol, ul, menu {
 	color: var(--color-purple);
 	font-weight: 700;
 }
+
+pre {
+	margin-block: 1rem;
+	background-color: var(--bg-offset);
+	padding: 1rem;
+	border-radius: 5px;
+}
