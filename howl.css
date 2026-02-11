@@ -20,6 +20,20 @@
 	font-weight: 200 900;
 }
 
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("./JetBrainsMono-VariableFont_wght.ttf");
+	font-style: normal;
+	font-weight: 100 800;
+}
+
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url("./JetBrainsMono-Italic-VariableFont_wght.ttf");
+	font-style: italic;
+	font-weight: 100 800;
+}
+
 html {
 	font-size: 110%;
 }
@@ -244,7 +258,14 @@ p {
 }
 
 pre {
-
+	font-family: "JetBrains Mono";
+	background-color: var(--howl-soft-dark);
+	color: var(--howl-warm-white);
+	tab-size: 4;
+	border-radius: 4px;
+	padding: 1.5rem;
+	margin-block: 2rem;
+	border-left: 5px solid var(--howl-golden-brown);
 }
 
 ul {
