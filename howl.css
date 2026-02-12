@@ -205,7 +205,7 @@ figcaption {
 	text-align: center;
 	font-size: 0.8rem;
 	font-style: italic;
-	margin-top: 0.5rem;
+	margin-block: 0.5rem;
 }
 
 figure {
@@ -214,8 +214,7 @@ figure {
 }
 
 figure img {
-	display: block;
-	width: 100%;
+	margin-inline: auto;
 }
 
 hr {
@@ -427,4 +426,39 @@ u {
 
 var {
 
+}
+
+wbr {
+
+}
+
+area {
+
+}
+
+audio {
+	width: 100%;
+	display: block;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+map {
+
+}
+
+track {
+
+}
+
+video {
+	max-width: 100%;
+}
+
+video::cue {
+	background-color: yellow;
+	color: white;
 }

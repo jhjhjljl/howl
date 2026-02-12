@@ -142,7 +142,7 @@
 				<h3><code>&lt;figcaption&gt;</code></h3>
 				<p>Represents a caption or legend describing the rest of the contents of its parent <code>&lt;figure&gt;</code> element.</p>
 				<figure>
-					<img src="https://placehold.co/400x100" alt="A snowy mountain peak during sunset.">
+					<img src="https://placehold.co/400x200" alt="A snowy mountain peak during sunset.">
 					<figcaption>The view from the base camp at dusk, 2026.</figcaption>
 				</figure>
 			</article>
@@ -150,7 +150,7 @@
 				<h3><code>&lt;figure&gt;</code></h3>
 				<p>Represents self-contained content, potentially with an optional caption, which is specified using the <code>&lt;figcaption&gt;</code> element. The figure, its caption, and its contents are referenced as a single unit.</p>
 				<figure>
-					<img src="https://placehold.co/400x100" alt="A snowy mountain peak during sunset.">
+					<img src="https://placehold.co/400x200" alt="A snowy mountain peak during sunset.">
 					<figcaption>The view from the base camp at dusk, 2026.</figcaption>
 				</figure>
 			</article>
@@ -424,10 +424,15 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;audio&gt;</code></h3>
 				<p>Used to embed sound content in documents. It may contain one or more audio sources, represented using the <code>src</code> attribute or the <code>&lt;source&gt;</code> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a <code>MediaStream</code>.</p>
+				<figure>
+					<figcaption>Sound of Waves – Marine Drive, Mumbai</figcaption>
+					<audio src="./placeholder-audio.mp3" controls></audio>
+				</figure>
 			</article>
 			<article>
 				<h3><code>&lt;img&gt;</code></h3>
 				<p>Embeds an image into the document.</p>
+				<img src="https://placehold.co/400x300" alt="Placeholder image.">
 			</article>
 			<article>
 				<h3><code>&lt;map&gt;</code></h3>
@@ -436,10 +441,18 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;track&gt;</code></h3>
 				<p>Used as a child of the media elements, <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code>. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (<code>.vtt</code> files)—Web Video Text Tracks.</p>
+				<video src="./placeholder-video.mp4" controls>
+					<track
+						default
+						kind="captions"
+						srclang="en"
+						src="./placeholder-video.vtt"/>
+				</video>
 			</article>
 			<article>
 				<h3><code>&lt;video&gt;</code></h3>
 				<p>Embeds a media player which supports video playback into the document. You can also use <code>&lt;video&gt;</code> for audio content, but the <code>&lt;audio&gt;</code> element may provide a more appropriate user experience.</p>
+				<video src="./placeholder-video.mp4" controls></video>
 			</article>
 		</section>
 		<section>
