@@ -12,8 +12,8 @@
 	<header>
 		<h1>Howl.css — A loyal companion for your HTML</h1>
 		<p>Howl is a loyal, classless CSS framework that follows your HTML wherever it goes. Named after my Shih Tzu, it's designed to bark at the complexity of modern web dev—giving you a beautiful, semantic site using nothing but the tags you already know.</p>
-		<p>Howl leaves no tag behind. While other frameworks only style the basics, Howl provides 100% coverage for every element in the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements">MDN reference</a>. If it's valid HTML, it's already styled and ready to go.</p>
-		<p>Howl is perfect for prototyping and honing your semantic HTML skills. However, please avoid using it in production, as classless CSS has inherent scaling limitations. It’s a great way to rediscover the power of native HTML elements instead of relying on <code>&lt;div&gt;</code> containers for everything.</p>
+		<p>Howl styles the content, not the layout. Howl provides 100% semantic coverage for every <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements" target="_blank">MDN</a> tag. Howl does not touch broad containers like <code>&lt;div&gt;</code>, <code>&lt;section&gt;</code>, or <code>&lt;main&gt;</code> — layout is your business, the details are mine.</p>
+		<p>Howl is perfect for prototyping and honing your semantic HTML skills. However, please avoid using it in production, as classless CSS has inherent scaling limitations. It’s a great way to rediscover the power of native HTML elements.</p>
 	</header>
 	<hr>
 	<main>
@@ -142,7 +142,7 @@
 				<h3><code>&lt;figcaption&gt;</code></h3>
 				<p>Represents a caption or legend describing the rest of the contents of its parent <code>&lt;figure&gt;</code> element.</p>
 				<figure>
-					<img src="https://placehold.co/400x200" alt="A snowy mountain peak during sunset.">
+					<img src="https://placehold.co/400x300" alt="A snowy mountain peak during sunset.">
 					<figcaption>The view from the base camp at dusk, 2026.</figcaption>
 				</figure>
 			</article>
@@ -151,7 +151,7 @@
 				<p>Represents self-contained content, potentially with an optional caption, which is specified using the <code>&lt;figcaption&gt;</code> element. The figure, its caption, and its contents are referenced as a single unit.</p>
 				<figure>
 					<img src="https://placehold.co/400x200" alt="A snowy mountain peak during sunset.">
-					<figcaption>The view from the base camp at dusk, 2026.</figcaption>
+					<figcaption>A placeholder image, 2026.</figcaption>
 				</figure>
 			</article>
 			<article>
@@ -424,10 +424,7 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;audio&gt;</code></h3>
 				<p>Used to embed sound content in documents. It may contain one or more audio sources, represented using the <code>src</code> attribute or the <code>&lt;source&gt;</code> element: the browser will choose the most suitable one. It can also be the destination for streamed media, using a <code>MediaStream</code>.</p>
-				<figure>
-					<figcaption>Sound of Waves – Marine Drive, Mumbai</figcaption>
-					<audio src="./placeholder-audio.mp3" controls></audio>
-				</figure>
+				<audio src="./placeholder-audio.mp3" controls></audio>
 			</article>
 			<article>
 				<h3><code>&lt;img&gt;</code></h3>
@@ -461,6 +458,7 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;embed&gt;</code></h3>
 				<p>Embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.</p>
+				<embed src="./placeholder-pdf.pdf" type="application/pdf">
 			</article>
 			<article>
 				<h3><code>&lt;fencedframe&gt;</code></h3>
@@ -469,18 +467,39 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;iframe&gt;</code></h3>
 				<p>Represents a nested browsing context, embedding another HTML page into the current one.</p>
+				<iframe
+					title="Inline Frame Example"
+					width="500"
+					height="500"
+					src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik">
+				</iframe>
 			</article>
 			<article>
 				<h3><code>&lt;object&gt;</code></h3>
 				<p>Represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.</p>
+				<object
+					type="video/mp4"
+					data="./placeholder-video.mp4"
+					width="500"
+					height="500"></object>
 			</article>
 			<article>
 				<h3><code>&lt;picture&gt;</code></h3>
 				<p>Contains zero or more <code>&lt;source&gt;</code> elements and one <code>&lt;img&gt;</code> element to offer alternative versions of an image for different display/device scenarios.</p>
+				<p>Change the browser window width to see the image change.</p>
+				<picture>
+					<source srcset="https://placehold.co/200x400" media="(orientation: portrait)">
+					<img src="https://placehold.co/400x200" alt="Placeholder image.">
+				</picture>
 			</article>
 			<article>
 				<h3><code>&lt;source&gt;</code></h3>
 				<p>Specifies multiple media resources for the <code>&lt;picture&gt;</code>, the <code>&lt;audio&gt;</code> element, or the <code>&lt;video&gt;</code> element. It is a void element, meaning that it has no content and does not have a closing tag. It is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image file formats and media file formats.</p>
+				<p>Change the browser window width to see the image change.</p>
+				<picture>
+					<source srcset="https://placehold.co/200x400" media="(orientation: portrait)">
+					<img src="https://placehold.co/400x200" alt="Placeholder image.">
+				</picture>
 			</article>
 		</section>
 		<section>
@@ -643,7 +662,7 @@ Error: Stress limit exceeded.</samp></pre>
 				<p>Represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.</p>
 			</article>
 			<article>
-				<h3><code>&lt;geolocation&gt;</code> <small>(Experimental)</small></h3>
+				<h3><code>&lt;geolocation&gt;</code></h3>
 				<p>Creates an interactive control for the user to share their geolocation data with the page.</p>
 			</article>
 			<article>

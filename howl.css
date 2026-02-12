@@ -170,8 +170,6 @@ blockquote::after {
 	color: var(--howl-golden-brown);
 }
 
-
-
 dd {
 	margin-left: 2rem;
 }
@@ -213,7 +211,7 @@ figure {
 	margin-block: 2rem;
 }
 
-figure img {
+figure :is(img, audio, embed) {
 	margin-inline: auto;
 }
 
@@ -461,4 +459,9 @@ video {
 video::cue {
 	background-color: yellow;
 	color: white;
+}
+
+embed {
+	display: block;
+	max-width: 100%;
 }
