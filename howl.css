@@ -152,12 +152,12 @@ search {
 }
 
 blockquote {
-	font-size: 1.1rem;
-	margin: 3rem;
+	margin-inline: 3rem;
+	margin-block: 2rem;
 	border-left: 3px solid var(--howl-golden-brown);
 	padding-left: 1rem;
 	font-style: italic;
-	color: var(--howl-hard-dark);
+	font-size: 1.1rem;
 }
 
 blockquote::before {
@@ -169,6 +169,8 @@ blockquote::after {
 	content: close-quote;
 	color: var(--howl-golden-brown);
 }
+
+
 
 dd {
 	margin-left: 2rem;
@@ -201,7 +203,7 @@ dt::before {
 
 figcaption {
 	text-align: center;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 	font-style: italic;
 	margin-top: 0.5rem;
 }
@@ -261,6 +263,7 @@ pre {
 	font-family: "JetBrains Mono";
 	background-color: var(--howl-soft-dark);
 	color: var(--howl-warm-white);
+	font-size: 0.9rem;
 	tab-size: 4;
 	border-radius: 4px;
 	padding: 1.5rem;
@@ -282,4 +285,146 @@ a {
 a:hover {
 	color: var(--howl-soft-dark);
 	text-decoration-color: var(--howl-soft-dark);
+}
+
+abbr {
+	color: var(--howl-golden-brown);
+	text-decoration: underline dotted;
+	text-decoration-thickness: 2px;
+	cursor: help;
+	text-underline-offset: 2px;
+}
+
+b, strong {
+	font-weight: 800;
+}
+
+bdi {
+
+}
+
+bdo {
+
+}
+
+br {
+
+}
+
+figure > blockquote {
+	margin-bottom: 1rem;
+}
+
+figure > blockquote ~ figcaption {
+	text-align: right;
+	margin-inline: 3rem;
+	margin-top: 0;
+}
+
+cite {
+
+}
+
+code, samp {
+	font-family: "JetBrains Mono";
+	background-color: var(--howl-light-grey);
+	border-radius: 3px;
+	padding: 0.1rem 0.4rem;
+	font-size: 0.9em;
+}
+
+pre :is(code, samp) {
+	background-color: initial;
+	border-radius: initial;
+	padding: initial;
+	font-size: inherit;
+}
+
+data {
+
+}
+
+dfn {
+
+}
+
+em {
+
+}
+
+i {
+
+}
+
+kbd {
+	font-family: "JetBrains Mono";
+	font-size: 0.9em;
+	background-color: var(--howl-warm-white);
+	color: var(--howl-hard-dark);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	padding: 0.05rem 0.3rem;
+}
+
+mark {
+	background-color: var(--howl-golden-brown);
+	border-radius: 2px;
+	padding-inline: 0.3rem;
+}
+
+q {
+	font-style: italic;
+}
+
+rp {
+
+}
+
+rt {
+
+}
+
+ruby {
+	font-size: 1.5rem;
+}
+
+s {
+	text-decoration-color: var(--howl-golden-brown);
+	text-decoration-thickness: 2px;
+}
+
+samp {
+
+}
+
+small {
+	font-size: 0.8rem;
+}
+
+strong {
+
+}
+
+sub {
+
+}
+
+sup {
+
+}
+
+time {
+
+}
+
+u {
+	text-decoration: wavy underline;
+	text-decoration-color: var(--howl-golden-brown);
+	text-underline-offset: 4px;
+}
+
+var {
+
 }

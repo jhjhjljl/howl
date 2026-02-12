@@ -239,82 +239,138 @@
 			<article>
 				<h3><code>&lt;abbr&gt;</code></h3>
 				<p>Represents an abbreviation or acronym.</p>
+				<p>You can use <abbr title="Cascading Style Sheets">CSS</abbr> (Cascading Style Sheets) to style your <abbr>HTML</abbr> (HyperText Markup Language). Using style sheets, you can keep your <abbr>CSS</abbr> presentation layer and <abbr>HTML</abbr> content layer separate. This is called "separation of concerns."</p>
 			</article>
 			<article>
 				<h3><code>&lt;b&gt;</code></h3>
 				<p>Used to draw the reader's attention to the element's contents, which are not otherwise granted special importance. This was formerly known as the Boldface element, and most browsers still draw the text in boldface. However, you should not use <code>&lt;b&gt;</code> for styling text or granting importance. If you wish to create boldface text, you should use the CSS <code>font-weight</code> property. If you wish to indicate an element is of special importance, you should use the <code>&lt;strong&gt;</code> element.</p>
+				<p>The two most popular science courses offered by the school are <b>chemistry</b> (the study of chemicals and the composition of substances) and <b>physics</b> (the study of the nature and properties of matter and energy).</p>
 			</article>
 			<article>
 				<h3><code>&lt;bdi&gt;</code></h3>
 				<p>Tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted.</p>
+				<ul>
+					<li><bdi>Evil Steven</bdi>: 1st place</li>
+					<li><bdi>François fatale</bdi>: 2nd place</li>
+					<li><bdi>이지훈</bdi>: 4th place</li>
+				</ul>
 			</article>
 			<article>
 				<h3><code>&lt;bdo&gt;</code></h3>
 				<p>Overrides the current directionality of text, so that the text within is rendered in a different direction.</p>
+				<p>The English song "Oh I do like to be beside the seaside"</p>
+				<p>Looks like this in Hebrew: <span>אה, אני אוהב להיות ליד חוף הים</span></p>
+				<p>In the computer's memory, this is stored as <bdo dir="ltr">אה, אני אוהב להיות ליד חוף הים</bdo>
+				</p>
 			</article>
 			<article>
 				<h3><code>&lt;br&gt;</code></h3>
 				<p>Produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <code>&lt;br&gt;</code><br>Eveniet maiores excepturi, nihil nemo enim labore eum eos incidunt saepe similique, molestiae autem sequi quae non aliquam nam error neque laudantium!</p>
 			</article>
 			<article>
 				<h3><code>&lt;cite&gt;</code></h3>
 				<p>Used to mark up the title of a creative work. The reference may be in an abbreviated form according to context-appropriate conventions related to citation metadata.</p>
+				<p>The design principles for this studio were heavily influenced by <cite>The Poetics of Space</cite> by Gaston Bachelard.</p>
+				<figure>
+					<blockquote>Form follows function—that has been misunderstood. Form and function should be one, joined in a spiritual union.</blockquote>
+					<figcaption>— Frank Lloyd Wright, <cite>An Organic Architecture</cite></figcaption>
+				</figure>
+				</figure>
 			</article>
 			<article>
 				<h3><code>&lt;code&gt;</code></h3>
 				<p>Displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.</p>
+				<p>To change the site accent, simply update the <code>--howl-golden-brown</code> variable in your root stylesheet.</p>
+				<pre><code>body {
+	font-family: "Nunito";
+	background-color: var(--howl-warm-white);
+	tab-size: 4;
+}</code></pre>
 			</article>
 			<article>
 				<h3><code>&lt;data&gt;</code></h3>
 				<p>Links a given piece of content with a machine-readable translation. If the content is time- or date-related, the <code>&lt;time&gt;</code> element must be used.</p>
+				<p>New Products:</p>
+				<ul>
+					<li><data value="398">Mini Ketchup</data></li>
+					<li><data value="399">Jumbo Ketchup</data></li>
+					<li><data value="400">Mega Jumbo Ketchup</data></li>
+				</ul>
 			</article>
 			<article>
 				<h3><code>&lt;dfn&gt;</code></h3>
 				<p>Used to indicate the term being defined within the context of a definition phrase or sentence. The ancestor <code>&lt;p&gt;</code> element, the <code>&lt;dt&gt;</code>/<code>&lt;dd&gt;</code> pairing, or the nearest section ancestor of the <code>&lt;dfn&gt;</code> element, is considered to be the definition of the term.</p>
+				<p>In structural engineering, <dfn>Tensegrity</dfn> is a design principle based on a system of isolated components under compression inside a network of continuous tension.</p>
 			</article>
 			<article>
 				<h3><code>&lt;em&gt;</code></h3>
 				<p>Marks text that has stress emphasis. The <code>&lt;em&gt;</code> element can be nested, with each nesting level indicating a greater degree of emphasis.</p>
+				<p>It is <em>essential</em> that the foundation is laid before the structural steel arrives on site.</p>
 			</article>
 			<article>
 				<h3><code>&lt;i&gt;</code></h3>
 				<p>Represents a range of text that is set off from the normal text for some reason, such as idiomatic text, technical terms, and taxonomical designations, among others. Historically, these have been presented using italicized type, which is the original source of the <code>&lt;i&gt;</code> naming of this element.</p>
+				<p>The term <i lang="fr">trompe-l'œil</i> is often used to describe architectural details that create an optical illusion of three-dimensionality.</p>
 			</article>
 			<article>
 				<h3><code>&lt;kbd&gt;</code></h3>
 				<p>Represents a span of inline text denoting textual user input from a keyboard, voice input, or any other text entry device. By convention, the user agent defaults to rendering the contents of a <code>&lt;kbd&gt;</code> element using its default monospace font, although this is not mandated by the HTML standard.</p>
+				<p>To view the wireframe overlay, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd>.</p>
+				<p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
 			</article>
 			<article>
 				<h3><code>&lt;mark&gt;</code></h3>
 				<p>Represents text which is marked or highlighted for reference or notation purposes due to the marked passage's relevance in the enclosing context.</p>
+				<p>The primary goal of the renovation was to <mark>maximize natural light</mark> without compromising the structural integrity of the original 1920s frame.</p>
 			</article>
 			<article>
 				<h3><code>&lt;q&gt;</code></h3>
 				<p>Indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <code>&lt;blockquote&gt;</code> element.</p>
+				<p>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/?item=qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></p>
 			</article>
 			<article>
 				<h3><code>&lt;rp&gt;</code></h3>
 				<p>Used to provide fall-back parentheses for browsers that do not support the display of ruby annotations using the <code>&lt;ruby&gt;</code> element. One <code>&lt;rp&gt;</code> element should enclose each of the opening and closing parentheses that wrap the <code>&lt;rt&gt;</code> element that contains the annotation's text.</p>
+				<ruby>
+					漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+				</ruby>
 			</article>
 			<article>
 				<h3><code>&lt;rt&gt;</code></h3>
 				<p>Specifies the ruby text component of a ruby annotation, which is used to provide pronunciation, translation, or transliteration information for East Asian typography. The <code>&lt;rt&gt;</code> element must always be contained within a <code>&lt;ruby&gt;</code> element.</p>
+				<ruby>
+					漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+				</ruby>
 			</article>
 			<article>
 				<h3><code>&lt;ruby&gt;</code></h3>
 				<p>Represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text, but this usage is less common.</p>
+				<ruby>
+					漢 <rp>(</rp><rt>kan</rt><rp>)</rp> 字 <rp>(</rp><rt>ji</rt><rp>)</rp>
+				</ruby>
 			</article>
 			<article>
 				<h3><code>&lt;s&gt;</code></h3>
 				<p>Renders text with a strikethrough, or a line through it. Use the <code>&lt;s&gt;</code> element to represent things that are no longer relevant or no longer accurate. However, <code>&lt;s&gt;</code> is not appropriate when indicating document edits; for that, use the <code>&lt;del&gt;</code> and <code>&lt;ins&gt;</code> elements, as appropriate.</p>
+				<p>The initial material for the cladding was <s>Brushed Aluminum</s> but has been updated to Copper for better weathering.</p>
 			</article>
 			<article>
 				<h3><code>&lt;samp&gt;</code></h3>
-				<p>Used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as <code>Courier</code> or Lucida Console).</p>
+				<p>Used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console).</p>
+				<p>After running the structural analysis, the console returned <samp>Error: Load-bearing limit exceeded on Axis B.</samp></p>
+				<pre><samp>Initializing structural analysis...
+Checking load-bearing Axis B: [OK]
+Checking load-bearing Axis C: [FAIL]
+Error: Stress limit exceeded.</samp></pre>
 			</article>
 			<article>
 				<h3><code>&lt;small&gt;</code></h3>
 				<p>Represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font size smaller, such as from <code>small</code> to <code>x-small</code>.</p>
+				<p>MDN Web Docs is a learning platform for Web technologies and the software that powers the Web.</p>
+				<p>
+					<small>The content is licensed under a Creative Commons Attribution-ShareAlike 2.5 Generic License.</small>
+				</p>
 			</article>
 			<article>
 				<h3><code>&lt;span&gt;</code></h3>
@@ -323,32 +379,41 @@
 			<article>
 				<h3><code>&lt;strong&gt;</code></h3>
 				<p>Indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.</p>
+				<p>Before proceeding, <strong>make sure</strong> you put on your safety goggles.</p>
 			</article>
 			<article>
 				<h3><code>&lt;sub&gt;</code></h3>
 				<p>Specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text.</p>
+				<p>Almost every developer's favorite molecule is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>, also known as "caffeine."</p>
 			</article>
 			<article>
 				<h3><code>&lt;sup&gt;</code></h3>
 				<p>Specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.</p>
+				<p>The total floor area of the mezzanine is 120m<sup>2</sup>, located on the 4<sup>th</sup> floor.</p>
 			</article>
 			<article>
 				<h3><code>&lt;time&gt;</code></h3>
 				<p>Represents a specific period in time. It may include the <code>datetime</code> attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.</p>
+				<p>The concert starts at <time datetime="2018-07-07T20:00:00">20:00</time>.</p>
 			</article>
 			<article>
 				<h3><code>&lt;u&gt;</code></h3>
 				<p>Represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a single solid underline but may be altered using CSS.</p>
+				<p>You could use this element to highlight <u>speling</u> mistakes, so the writer can <u>corect</u> them.</p>
 			</article>
 			<article>
 				<h3><code>&lt;var&gt;</code></h3>
 				<p>Represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent.</p>
+				<p>The volume of a box is <var>l</var> × <var>w</var> × <var>h</var>, where <var>l</var> represents the length, <var>w</var> the width and <var>h</var> the height of the box.</p>
 			</article>
 			<article>
 				<h3><code>&lt;wbr&gt;</code></h3>
 				<p>Represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.</p>
+				<p>Fernstraßenbauprivatfinanzierungsgesetz</p>
+				<p>Fernstraßen<wbr>privat<wbr>finanzierungs<wbr>gesetz</p>
 			</article>
 		</section>
+		<hr>
 		<section>
 			<h2 id="image-and-multimedia">Image and multimedia</h2>
 			<p>HTML supports various multimedia resources such as images, audio, and video.</p>
