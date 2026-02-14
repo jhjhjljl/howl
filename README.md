@@ -6,3 +6,4 @@ Howl styles the content, not the layout. Howl provides 100% semantic coverage fo
 
 Howl is perfect for prototyping and honing your semantic HTML skills. However, please avoid using it in production, as classless CSS has inherent scaling limitations. It’s a great way to rediscover the power of native HTML elements.
 
+Please download the `fonts` folder and ensure all fonts are linked correctly in the howl.css file, depending on where you saved it.
