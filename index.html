@@ -33,15 +33,15 @@
 				</address>
 			</article>
 			<article>
-				<h3><code><s>&lt;article&gt;</s></code></h3>
+				<h3><code>&lt;article&gt;</code> <small>(Unstyled)</small></h3>
 				<p>Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include a forum post, a magazine or newspaper article, a blog entry, a product card, a user-submitted comment, an interactive widget or gadget, or any other independent item of content.</p>
 			</article>
 			<article>
-				<h3><code><s>&lt;aside&gt;</s></code></h3>
+				<h3><code>&lt;aside&gt;</code> <small>(Unstyled)</small></h3>
 				<p>Represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.</p>
 			</article>
 			<article>
-				<h3><code><s>&lt;footer&gt;</s></code></h3>
+				<h3><code>&lt;footer&gt;</code></h3>
 				<p>Represents a footer for its nearest ancestor sectioning content or sectioning root element. A <code>&lt;footer&gt;</code> typically contains information about the author of the section, copyright data, or links to related documents.</p>
 			</article>
 			<article>
@@ -515,16 +515,50 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;math&gt;</code></h3>
 				<p>The top-level element in MathML. Every valid MathML instance must be wrapped in it. In addition, you must not nest a second <code>&lt;math&gt;</code> element in another, but you can have an arbitrary number of other child elements in it.</p>
-				<math>
-					<mrow>
-					<mi>E</mi>
-					<mo>=</mo>
-					<mi>m</mi>
-					<msup>
-						<mi>c</mi>
-				 		<mn>2</mn>
-				  	</msup>
-				</math>
+				<figure>
+					<math>
+						<mrow>
+						<mi>E</mi>
+						<mo>=</mo>
+						<mi>m</mi>
+						<msup>
+							<mi>c</mi>
+							 <mn>2</mn>
+						  </msup>
+					</math>
+					<figcaption>Mass-energy equivalence, Albert Einstein</figcaption>
+				</figure>
+				<figure>
+					<math>
+						<mrow>
+							<mi>x</mi>
+							<mo>=</mo>
+						</mrow>
+						<mfrac>
+							<mrow>
+								<mo>&#x2212;</mo>
+								<mi>b</mi>
+								<mo>&#x2213;</mo>
+								<msqrt>
+									<msup>
+										<mi>b</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>&#x2212;</mo>
+									<mn>4</mn>
+									<mi>a</mi>
+									<mi>c</mi>
+								</msqrt>
+							</mrow>
+							<mrow>
+								<mn>2</mn>
+								<mi>a</mi>
+							</mrow>
+						</mfrac>
+					</math>
+					<figcaption>The Quadratic Formula</figcaption>
+				</figure>
+				</div>
 			</article>
 		</section>
 		<section>
@@ -894,25 +928,52 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;input&gt;</code></h3>
 				<p>Used to create interactive controls for web-based forms to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <code>&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p>
-				<div>
-					<input type="button" value="input type button">
-					<input type="submit" value="input type submit">
-				</div>
+				<input type="button" value="input type button">
 				<fieldset>
 					<legend>Project Status</legend>
 					<div>
-						<input type="checkbox" id="foundation-complete" checked>
-						<label for="foundation-complete">Foundation Complete</label>
+						<input type="checkbox" id="foundation-complete-section-input" checked>
+						<label for="foundation-complete-section-input">Foundation Complete</label>
 					</div>
 					<div>
-						<input type="checkbox" id="framing-inspection">
-						<label for="framing-inspection">Framing Inspection</label>
+						<input type="checkbox" id="framing-inspection-section-input">
+						<label for="framing-inspection-section-input">Framing Inspection</label>
 					</div>
 					<div>
-						<input type="checkbox" id="electrical-rough-in">
-						<label for="electrical-rough-in">Electrical Rough-in</label>
+						<input type="checkbox" id="electrical-rough-insection-input">
+						<label for="electrical-rough-in-section-input">Electrical Rough-in</label>
 					</div>
 				</fieldset>
+				<fieldset>
+					<legend>Choose your color</legend>
+					<div>
+						<input type="color" id="foreground-color-section-input" value="#D4A373">
+						<label for="foreground-color-section-input">Foreground color</label>
+					</div>
+					<div>
+						<input type="color" id="background-color-section-input" value="#FCF9F2">
+						<label for="background-color-section-inpug">Background color</label>
+					</div>
+				</fieldset>
+				<label for="start-date-section-input">Start date:</label>
+				<input type="date" id="start-date-section-input">
+				<label for="meeting-time-section-input">Choose a time for your appointment:</label>
+				<input type="datetime-local" id="meeting-time-section-input">
+				<label for="email-section-input">Enter your email:</label>
+				<input type="email" id="email-section-input">
+				<label for="avatar-section-input">Choose a profile picture:</label>
+				<input type="file" id="avatar-section-input" accept="image/png, image/jpeg">
+				<input type="hidden" id="hidden-section-input">
+				<label for="start-section-input">Start month:</label>
+				<input type="month" id="start-section-input">
+				<label for="tentacles-section-input">Number of tentacles:</label>
+				<input type="number" id="tentacles-section-input">
+				<label for="password-section-input">Password:</label>
+				<input type="password" id="password-section-input">
+				<label for="volume-section-input">Volume:</label>
+				<input type="range" id="volume-section-input">
+				<label for="reset-section-input">A button that resets the contents of the form to default values. Not recommended.</label>
+				<input type="reset" id="reset-section-input"value="input type reset">
 			</article>
 			<article>
 				<h3><code>&lt;label&gt;</code></h3>
@@ -925,10 +986,25 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;meter&gt;</code></h3>
 				<p>Represents either a scalar value within a known range or a fractional value.</p>
+				<label for="fuel">Fuel level:</label>
+				<meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
 			</article>
 			<article>
 				<h3><code>&lt;optgroup&gt;</code></h3>
 				<p>Creates a grouping of options within a <code>&lt;select&gt;</code> element.</p>
+				<label for="dino-select">Choose a dinosaur:</label>
+				<select id="dino-select">
+					<optgroup label="Theropods">
+						<option>Tyrannosaurus</option>
+						<option>Velociraptor</option>
+						<option>Deinonychus</option>
+					</optgroup>
+					<optgroup label="Sauropods">
+						<option>Diplodocus</option>
+						<option>Saltasaurus</option>
+						<option>Apatosaurus</option>
+					</optgroup>
+				</select>
 			</article>
 			<article>
 				<h3><code>&lt;option&gt;</code></h3>
@@ -941,18 +1017,32 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;progress&gt;</code></h3>
 				<p>Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.</p>
+				<label for="file">File progress:</label>
+				<progress id="file" max="100" value="70"></progress>
 			</article>
 			<article>
 				<h3><code>&lt;select&gt;</code></h3>
 				<p>Represents a control that provides a menu of options.</p>
+				<label for="pet-select">Choose a pet:</label>
+				<select name="pets" id="pet-select">
+					<option disabled>Please choose an option</option>
+					<option value="dog">Dog</option>
+					<option value="cat">Cat</option>
+					<option value="hamster">Hamster</option>
+					<option value="parrot">Parrot</option>
+					<option value="spider">Spider</option>
+					<option value="goldfish">Goldfish</option>
+				</select>
 			</article>
 			<article>
-				<h3><code>&lt;selectedcontent&gt;</code></h3>
+				<h3><code>&lt;selectedcontent&gt;</code> <small>(Experimental technology)</small></h3>
 				<p>Displays the content of the currently selected <code>&lt;option&gt;</code> inside a closed <code>&lt;select&gt;</code> element.</p>
 			</article>
 			<article>
 				<h3><code>&lt;textarea&gt;</code></h3>
 				<p>Represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example, a comment on a review or feedback form.</p>
+				<label for="story">Tell us your story:</label>
+				<textarea id="story" name="story"></textarea>
 			</article>
 		</section>
 		<section>
