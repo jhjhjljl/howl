@@ -69,22 +69,6 @@ address {
 	border-left: 3px solid var(--howl-golden-brown);
 }
 
-article {
-
-}
-
-aside {
-
-}
-
-footer {
-
-}
-
-header {
-
-}
-
 h1, h2, h3, h4, h5, h6 {
 	color: var(--howl-hard-dark);
 	line-height: 1.2;
@@ -132,22 +116,6 @@ hgroup > :first-child ~ * {
 	line-height: 1.2;
 }
 
-main {
-
-}
-
-nav {
-
-}
-
-section {
-
-}
-
-search {
-
-}
-
 blockquote {
 	margin-inline: 3rem;
 	margin-block: 2rem;
@@ -169,14 +137,6 @@ blockquote::after {
 
 dd {
 	margin-left: 2rem;
-}
-
-div {
-
-}
-
-dl {
-
 }
 
 dl dt:first-child::before {
@@ -238,17 +198,6 @@ li::marker {
 	color: var(--howl-golden-brown);
 }
 
-menu {
-
-}
-
-ol {
-
-}
-
-p {
-}
-
 pre {
 	font-family: "JetBrains Mono";
 	background-color: var(--howl-soft-dark);
@@ -259,10 +208,6 @@ pre {
 	padding: 1.5rem;
 	margin-block: 2rem;
 	border-left: 5px solid var(--howl-golden-brown);
-}
-
-ul {
-
 }
 
 a {
@@ -289,18 +234,6 @@ b, strong {
 	font-weight: 800;
 }
 
-bdi {
-
-}
-
-bdo {
-
-}
-
-br {
-
-}
-
 figure > blockquote {
 	margin-bottom: 1rem;
 }
@@ -309,10 +242,6 @@ figure > blockquote ~ figcaption {
 	align-self: flex-end;
 	margin-block: 0;
 	margin-right: 3rem;
-}
-
-cite {
-
 }
 
 code, samp {
@@ -328,22 +257,6 @@ pre :is(code, samp) {
 	border-radius: initial;
 	padding: initial;
 	font-size: inherit;
-}
-
-data {
-
-}
-
-dfn {
-
-}
-
-em {
-
-}
-
-i {
-
 }
 
 kbd {
@@ -368,14 +281,6 @@ q {
 	font-style: italic;
 }
 
-rp {
-
-}
-
-rt {
-
-}
-
 ruby {
 	font-size: 1.5rem;
 }
@@ -386,46 +291,14 @@ s {
 	opacity: 0.3;
 }
 
-samp {
-
-}
-
 small {
 	font-size: 0.8rem;
-}
-
-strong {
-
-}
-
-sub {
-
-}
-
-sup {
-
-}
-
-time {
-
 }
 
 u {
 	text-decoration: wavy underline;
 	text-decoration-color: var(--howl-golden-brown);
 	text-underline-offset: 4px;
-}
-
-var {
-
-}
-
-wbr {
-
-}
-
-area {
-
 }
 
 audio {
@@ -436,14 +309,6 @@ audio {
 img {
 	display: block;
 	max-width: 100%;
-}
-
-map {
-
-}
-
-track {
-
 }
 
 video {
@@ -460,26 +325,6 @@ embed {
 	max-width: 100%;
 }
 
-fencedframe {
-
-}
-
-iframe {
-
-}
-
-object {
-
-}
-
-picture {
-
-}
-
-source {
-
-}
-
 svg {
 	max-width: 100%;
 	display: block;
@@ -488,18 +333,6 @@ svg {
 math {
 	font-family: "Latin Modern Math";
 	font-size: 1.2rem;
-}
-
-canvas {
-
-}
-
-noscript {
-
-}
-
-script {
-
 }
 
 del {
@@ -588,10 +421,6 @@ button:disabled {
 	background-color: var(--howl-soft-dark);
 }
 
-datalist {
-
-}
-
 input[list] {
 	appearance: none;
 	display: block;
@@ -616,14 +445,6 @@ fieldset {
 	border-radius: 3px;
 	margin: 1rem 0;
 	padding: 0.7rem 1rem;
-}
-
-form {
-
-}
-
-input {
-
 }
 
 input[type="checkbox"] {
@@ -789,18 +610,6 @@ meter {
 	max-width: 200px;
 }
 
-optgroup {
-
-}
-
-option {
-
-}
-
-output {
-
-}
-
 progress {
 	display: block;
 }
@@ -830,10 +639,6 @@ select:focus{
 	border-color: var(--howl-golden-brown);
 }
 
-selectedcontent {
-
-}
-
 textarea {
 	font-family: "Nunito";
 	font-size: 1rem;
@@ -859,148 +664,3 @@ textarea {
 textarea:focus {
 	outline-color: var(--howl-golden-brown);
 }
-
-/*
-button, input[type="button"], input[type="submit"], input[type="reset"] {
-
-}
-
-:is(button:not(:disabled), input[type="button"], input[type="submit"], input[type="reset"]):hover {
-	background-color: var(--howl-soft-dark);
-}
-
-button:disabled {
-	background-color: var(--howl-light-grey);
-	cursor: not-allowed;
-	opacity: 0.8;
-}
-
-datalist{
-
-}
-
-
-form {
-
-}
-
-input {
-
-}
-
-input[type="radio"] {
-	position: relative;
-	margin-right: 0.3rem;
-}
-
-input[type="radio"]::before {
-	content: "";
-	position: absolute;
-	width: 22px;
-	height: 22px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: var(--howl-off-white);
-	border: 2px solid var(--howl-light-grey);
-	border-radius: 50%;
-	transition: border-color 0.2s ease;
-}
-
-input[type="radio"]:checked::before {
-	border-color: var(--howl-golden-brown);
-}
-
-input[type="radio"]::after {
-	opacity: 0;
-	content: "";
-	position: absolute;
-	width: 12px;
-	height: 12px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: var(--howl-golden-brown);
-	border-radius: 50%;
-	transition: opacity 0.2s ease;
-}
-
-input[type="radio"]:checked::after {
-	opacity: 1;
-}
-
-input[type="checkbox"] {
-	position: relative;
-	margin-right: 0.3rem;
-}
-
-input[type="checkbox"]::before {
-	content: "✓";
-	font-size: 1rem;
-	color: var(--howl-off-white);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 22px;
-	height: 22px;
-	background-color: var(--howl-off-white);
-	border: 2px solid var(--howl-light-grey);
-	border-radius: 3px;
-	transition: all 0.2s ease;
-}
-
-input[type="checkbox"]:checked::before {
-	background-color: var(--howl-golden-brown);
-	border-color: var(--howl-golden-brown);
-}
-
-input[type="color"] {
-	border: 2px solid var(--howl-light-grey);
-	background-color: var(--howl-off-white);
-	border-radius: 3px;
-}
-
-input[type="date"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"] {
-	font-family: "Nunito";
-	color: var(--howl-soft-dark);
-	display: block;
-	width: 100%;
-	background-color: #fcfaf7;
-	border: 2px solid var(--howl-light-grey);
-	border-radius: 5px;
-	padding: 0.6rem 1rem;
-	font-size: 1rem;
-	margin-bottom: 1rem;
-}
-
-input[type="range"] {
-	display: block;
-}
-
-optgroup {
-
-}
-
-option {
-
-}
-
-output {
-
-}
-
-select {
-
-}
-
-selectedcontent {
-
-}
-
-textarea {
-
-} */
