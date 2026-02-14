@@ -12,35 +12,35 @@
 
 @font-face {
 	font-family: "Nunito";
-	src: url("./Nunito-VariableFont_wght.ttf");
+	src: url("./fonts/Nunito-VariableFont_wght.ttf");
 	font-style: normal;
 	font-weight: 200 900;
 }
 
 @font-face {
 	font-family: "Nunito";
-	src: url("./Nunito-Italic-VariableFont_wght.ttf");
+	src: url("./fonts/Nunito-Italic-VariableFont_wght.ttf");
 	font-style: italic;
 	font-weight: 200 900;
 }
 
 @font-face {
 	font-family: "JetBrains Mono";
-	src: url("./JetBrainsMono-VariableFont_wght.ttf");
+	src: url("./fonts/JetBrainsMono-VariableFont_wght.ttf");
 	font-style: normal;
 	font-weight: 100 800;
 }
 
 @font-face {
 	font-family: "JetBrains Mono";
-	src: url("./JetBrainsMono-Italic-VariableFont_wght.ttf");
+	src: url("./fonts/JetBrainsMono-Italic-VariableFont_wght.ttf");
 	font-style: italic;
 	font-weight: 100 800;
 }
 
 @font-face {
 	font-family: "Latin Modern Math";
-	src: url("./LatinModernMath.otf");
+	src: url("./fonts/LatinModernMath.otf");
 }
 
 html {
