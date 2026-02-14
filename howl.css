@@ -554,7 +554,11 @@ tfoot td {
 	border-top: 2px solid var(--howl-soft-dark);
 }
 
-button {
+button,
+input[type="button"],
+input[type="file"]::file-selector-button,
+input[type="reset"],
+input[type="submit"] {
 	font-family: "Nunito";
 	font-size: 0.9rem;
 	padding: 0.5rem 1rem;
@@ -575,12 +579,36 @@ button:disabled {
 	opacity: 0.8;
 }
 
-button:not(:disabled):hover {
+:is(
+	button:not(:disabled),
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"]
+):hover {
 	background-color: var(--howl-soft-dark);
 }
 
 datalist {
 
+}
+
+input[list] {
+	appearance: none;
+	display: block;
+	font-family: "Nunito";
+	background-color: var(--howl-off-white);
+	font-size: 1rem;
+	padding: 0.7rem 0.5rem 0.7rem 1rem;
+	border: 2px solid var(--howl-light-grey);
+	border-radius: 3px;
+	color: var(--howl-soft-dark);
+	position: relative;
+	outline: none;
+	margin-bottom: 1rem;
+}
+
+input[list]:focus{
+	border-color: var(--howl-golden-brown);
 }
 
 fieldset {
@@ -596,6 +624,148 @@ form {
 
 input {
 
+}
+
+input[type="checkbox"] {
+	position: relative;
+	margin-right: 0.3rem;
+}
+
+input[type="checkbox"]::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: "✓";
+	font-size: 1rem;
+	color: var(--howl-off-white);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 22px;
+	height: 22px;
+	background-color: var(--howl-off-white);
+	border: 2px solid var(--howl-light-grey);
+	border-radius: 3px;
+	transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked::before {
+	background-color: var(--howl-golden-brown);
+	border-color: var(--howl-golden-brown);
+}
+
+input[type="color"] {
+	border: 2px solid var(--howl-light-grey);
+	background-color: var(--howl-off-white);
+	border-radius: 3px;
+	transition: border-color 0.2s ease;
+}
+
+input[type="color"]:focus {
+	border-color: var(--howl-golden-brown);
+}
+
+input[type="date"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="file"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+	display: block;
+	width: 100%;
+	font-family: "Nunito";
+	font-size: 1rem;
+	color: var(--howl-soft-dark);
+	background-color: var(--howl-off-white);
+	border: 2px solid var(--howl-light-grey);
+	border-radius: 3px;
+	padding: 0.6rem 1rem;
+	outline: none;
+	margin-bottom: 1rem;
+	transition: border-color 0.2s ease;
+}
+
+:is(
+	input[type="date"],
+	input[type="datetime-local"],
+	input[type="email"],
+	input[type="file"],
+	input[type="month"],
+	input[type="number"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"],
+	input[type="text"],
+	input[type="time"],
+	input[type="url"],
+	input[type="week"]
+):focus {
+	border-color: var(--howl-golden-brown);
+}
+
+input[type="file"]::file-selector-button {
+	margin-right: 0.5rem;
+	font-size: 0.9rem;
+}
+
+input[type="file"]::file-selector-button:hover {
+	background-color: var(--howl-soft-dark);
+}
+
+input[type="radio"] {
+	position: relative;
+	margin-right: 0.3rem;
+}
+
+input[type="radio"]::before {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--howl-off-white);
+	border: 2px solid var(--howl-light-grey);
+	border-radius: 50%;
+	transition: border-color 0.2s ease;
+}
+
+input[type="radio"]::after {
+	opacity: 0;
+	content: "";
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--howl-golden-brown);
+	border-radius: 50%;
+	transition: opacity 0.2s ease;
+}
+
+input[type="radio"]:checked::before {
+	border-color: var(--howl-golden-brown);
+}
+
+input[type="radio"]:checked::after {
+	opacity: 1;
+}
+
+input[type="range"] {
+	display: block;
+	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 200px;
 }
 
 label {
@@ -614,6 +784,9 @@ legend {
 
 meter {
 	display: block;
+	margin-bottom: 1rem;
+	width: 100%;
+	max-width: 200px;
 }
 
 optgroup {
@@ -640,17 +813,17 @@ select {
 	font-size: 1rem;
 	padding-block: 0.7rem;
 	padding-left: 1rem;
-	padding-right: 2rem;
+	padding-right: 3rem;
 	border: 2px solid var(--howl-light-grey);
 	border-radius: 3px;
 	color: var(--howl-soft-dark);
-	cursor: pointer;
 	position: relative;
 	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%233D3935'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2.5' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
 	background-repeat: no-repeat;
 	background-position: right 0.75rem center;
 	background-size: 1.2rem;
 	outline: none;
+	margin-bottom: 1rem;
 }
 
 select:focus{
@@ -680,6 +853,7 @@ textarea {
 	outline-offset: -2px;
 	resize: vertical;
 	line-height: 1.6;
+	margin-bottom: 1rem;
 }
 
 textarea:focus {
@@ -801,36 +975,6 @@ input[type="date"], input[type="datetime-local"], input[type="email"], input[typ
 	padding: 0.6rem 1rem;
 	font-size: 1rem;
 	margin-bottom: 1rem;
-}
-
-input[type="file"] {
-	display: block;
-	font-family: "Nunito";
-	background-color: var(--howl-off-white);
-	border: 2px solid var(--howl-light-grey);
-	border-radius: 5px;
-	padding: 0.6rem 1rem;
-	font-size: 1rem;
-	color: var(--howl-soft-dark);
-	cursor: pointer;
-}
-
-input[type="file"]::file-selector-button {
-	font-size: 0.9rem;
-	background-color: var(--howl-golden-brown);
-	color: var(--howl-warm-white);
-	border: none;
-	font-family: "Nunito";
-	font-weight: 700;
-	margin-right: 0.5rem;
-	padding: 0.5rem 1rem;
-	border-radius: 3px;
-	cursor: pointer;
-	transition: background-color 0.2s ease;
-}
-
-input[type="file"]::file-selector-button:hover {
-	background-color: var(--howl-soft-dark);
 }
 
 input[type="range"] {

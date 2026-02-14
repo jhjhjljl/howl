@@ -400,7 +400,10 @@ Error: Stress limit exceeded.</samp></pre>
 				</p>
 			</article>
 			<article>
-				<h3><code>&lt;span&gt;</code></h3>
+				<h3>
+					<code>&lt;span&gt;</code>
+					<small>(Unstyled)</small>
+				</h3>
 				<p>A generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the <code>class</code> or <code>id</code> attributes), or because they share attribute values, such as <code>lang</code>. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <code>&lt;div&gt;</code> element, but <code>&lt;div&gt;</code> is a block-level element whereas a <code>&lt;span&gt;</code> is an inline-level element.</p>
 			</article>
 			<article>
@@ -496,7 +499,7 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3>
 					<code>&lt;fencedframe&gt;</code>
-					<small>(Experimental technology)</small>
+					<small>(Unstyled)</small>
 				</h3>
 				<p>Represents a nested browsing context, like <code>&lt;iframe&gt;</code> but with more native privacy features built in.</p>
 			</article>
@@ -865,18 +868,18 @@ Error: Stress limit exceeded.</samp></pre>
 				<h3><code>&lt;th&gt;</code></h3>
 				<p>A child of the <code>&lt;tr&gt;</code> element, it defines a cell as the header of a group of table cells. The nature of this group can be explicitly defined by the <code>scope</code> and <code>headers</code> attributes.</p>
 				<table>
+					<thead>
+						<tr>
+							<th>Formula Name</th>
+							<th>Notation</th>
+							<th>Primary Variable</th>
+						</tr>
+					</thead>
 					<tbody>
 						<tr>
-							<td>Site</td>
-							<td><ins>Active</ins></td>
-						</tr>
-						<tr>
-							<td>Safety</td>
-							<td><ins>Pass</ins></td>
-						</tr>
-						<tr>
-							<td>Audit</td>
-							<td><del>Pending</del></td>
+							<td>Mass-Energy</td>
+							<td>E = mc²</td>
+							<td>Energy (E)</td>
 						</tr>
 					</tbody>
 				</table>
@@ -931,8 +934,8 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;button&gt;</code></h3>
 				<p>An interactive element activated by a user with a mouse, keyboard, finger, voice command, or other assistive technology. Once activated, it performs an action, such as submitting a <code>form</code> or opening a dialog.</p>
-				<button>Generate Report</button>
-				<button disabled>Draft Locked</button>
+				<button>Regular Button</button>
+				<button disabled>Disabled Button</button>
 			</article>
 			<article>
 				<h3><code>&lt;datalist&gt;</code></h3>
@@ -969,13 +972,35 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;form&gt;</code></h3>
 				<p>Represents a document section containing interactive controls for submitting information.</p>
+				<form>
+					<fieldset>
+						<legend>Project Details</legend>
+						<label>Blueprint Name</label>
+						<input type="text" placeholder="e.g., Central Station North">
+					</fieldset>
+					<fieldset>
+						<legend>System Specs</legend>
+						<label>Unit Type</label>
+						<select>
+							<option>Metric (mm)</option>
+							<option>Imperial (in)</option>
+						</select>
+						<label>Design Notes</label>
+						<textarea placeholder="Enter architectural constraints."></textarea>
+					</fieldset>
+					<p>
+						<input type="checkbox" id="disclaimer">
+						<label for="disclaimer">I verify all measurements are precise.</label>
+					</p>
+					<button type="submit">Execute Blueprint</button>
+				</form>
 			</article>
 			<article>
 				<h3><code>&lt;input&gt;</code></h3>
 				<p>Used to create interactive controls for web-based forms to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <code>&lt;input&gt;</code> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.</p>
-				<input type="button" value="input type button">
+				<input type="button" value="Input Type Button">
 				<fieldset>
-					<legend>Project Status</legend>
+					<legend>checkbox</legend>
 					<div>
 						<input type="checkbox" id="foundation-complete-section-input" checked>
 						<label for="foundation-complete-section-input">Foundation Complete</label>
@@ -990,7 +1015,7 @@ Error: Stress limit exceeded.</samp></pre>
 					</div>
 				</fieldset>
 				<fieldset>
-					<legend>Choose your color</legend>
+					<legend>color</legend>
 					<div>
 						<input type="color" id="foreground-color-section-input" value="#D4A373">
 						<label for="foreground-color-section-input">Foreground color</label>
@@ -1000,33 +1025,73 @@ Error: Stress limit exceeded.</samp></pre>
 						<label for="background-color-section-inpug">Background color</label>
 					</div>
 				</fieldset>
-				<label for="start-date-section-input">Start date:</label>
+				<label for="start-date-section-input">date:</label>
 				<input type="date" id="start-date-section-input">
-				<label for="meeting-time-section-input">Choose a time for your appointment:</label>
+				<label for="meeting-time-section-input">datetime-local:</label>
 				<input type="datetime-local" id="meeting-time-section-input">
-				<label for="email-section-input">Enter your email:</label>
+				<label for="email-section-input">email:</label>
 				<input type="email" id="email-section-input">
-				<label for="avatar-section-input">Choose a profile picture:</label>
+				<label for="avatar-section-input">file:</label>
 				<input type="file" id="avatar-section-input" accept="image/png, image/jpeg">
 				<input type="hidden" id="hidden-section-input">
-				<label for="start-section-input">Start month:</label>
+				<label for="start-section-input">month:</label>
 				<input type="month" id="start-section-input">
-				<label for="tentacles-section-input">Number of tentacles:</label>
+				<label for="tentacles-section-input">number:</label>
 				<input type="number" id="tentacles-section-input">
-				<label for="password-section-input">Password:</label>
+				<label for="password-section-input">password:</label>
 				<input type="password" id="password-section-input">
-				<label for="volume-section-input">Volume:</label>
+				<fieldset>
+					<legend>radio:</legend>
+					<div>
+						<input type="radio" id="huey" name="drone" value="huey" checked>
+						<label for="huey">Huey</label>
+					</div>
+					<div>
+						<input type="radio" id="dewey" name="drone" value="dewey">
+						<label for="dewey">Dewey</label>
+					</div>
+					<div>
+						<input type="radio" id="louie" name="drone" value="louie">
+						<label for="louie">Louie</label>
+					</div>
+				</fieldset>
+				<label for="volume-section-input">range:</label>
 				<input type="range" id="volume-section-input">
-				<label for="reset-section-input">A button that resets the contents of the form to default values. Not recommended.</label>
-				<input type="reset" id="reset-section-input"value="input type reset">
+				<input type="reset" id="reset-section-input" value="Input Type Reset">
+				<div>
+					<label for="site-search-section-input">search:</label>
+					<input type="search" id="site-search-section-input" name="q">
+				</div>
+				<input type="submit" value="Input Type Submit">
+				<div>
+					<label for="phone-section-input">tel:</label>
+					<input type="tel" id="phone-section-input" name="phone-section-input">
+				</div>
+				<label for="name-section-input">text:</label>
+				<input type="text" id="name-section-input" name="name-section-input">
+				<label for="appointment-section-input">time:</label>
+				<input type="time" id="appointment-section-input" name="appointment-section-input">
+				<label for="url-section-input">url:</label>
+				<input type="url" name="url-section-input" id="url-section-input" placeholder="https://example.com">
+				<label for="week-section-input">week:</label>
+				<input type="week" name="week-section-input" id="week-section-input">
 			</article>
 			<article>
 				<h3><code>&lt;label&gt;</code></h3>
 				<p>Represents a caption for an item in a user interface.</p>
+				<label for="project-title">Project Title:</label>
+				<input type="text" id="project-title">
 			</article>
 			<article>
 				<h3><code>&lt;legend&gt;</code></h3>
 				<p>Represents a caption for the content of its parent <code>&lt;fieldset&gt;</code>.</p>
+				<fieldset>
+					<legend>Mathematical Constraints</legend>
+					<label>Variable (a)</label>
+					<input type="number" value="1.0">
+					<label>Variable (b)</label>
+					<input type="number" value="0.5">
+				</fieldset>
 			</article>
 			<article>
 				<h3><code>&lt;meter&gt;</code></h3>
@@ -1054,9 +1119,23 @@ Error: Stress limit exceeded.</samp></pre>
 			<article>
 				<h3><code>&lt;option&gt;</code></h3>
 				<p>Used to define an item contained in a <code>&lt;select&gt;</code>, an <code>&lt;optgroup&gt;</code>, or a <code>&lt;datalist&gt;</code> element. As such, <code>&lt;option&gt;</code> can represent menu items in popups and other lists of items in an HTML document.</p>
+				<label>Material Selection</label>
+				<select>
+					<optgroup label="Structural">
+						<option value="steel">Reinforced Steel</option>
+						<option value="concrete">High-Density Concrete</option>
+					</optgroup>
+					<optgroup label="Finishing">
+						<option value="wood">Sustainable Oak</option>
+						<option value="glass">Tempered Glass</option>
+					</optgroup>
+				</select>
 			</article>
 			<article>
-				<h3><code>&lt;output&gt;</code></h3>
+				<h3>
+					<code>&lt;output&gt;</code>
+					<small>(Unstyled)</small>
+				</h3>
 				<p>Container element into which a site or app can inject the results of a calculation or the outcome of a user action.</p>
 			</article>
 			<article>
@@ -1080,7 +1159,7 @@ Error: Stress limit exceeded.</samp></pre>
 				</select>
 			</article>
 			<article>
-				<h3><code>&lt;selectedcontent&gt;</code> <small>(Experimental technology)</small></h3>
+				<h3><code>&lt;selectedcontent&gt;</code> <small>(Unstyled)</small></h3>
 				<p>Displays the content of the currently selected <code>&lt;option&gt;</code> inside a closed <code>&lt;select&gt;</code> element.</p>
 			</article>
 			<article>
